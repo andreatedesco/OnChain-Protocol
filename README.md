@@ -14,7 +14,7 @@ OnChain Protocol is a set of Solidity contracts and libraries that enable on-cha
 
 ## The Project Structure
 
-- [OnChainMetadataBuilder.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/contracts/OnChainMetadataBuilder.sol): This library provides functions for generating URIs for tokens and contracts based on provided metadata.
+- [OnChainMetadataBuilder.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/dapp/contracts/OnChainMetadataBuilder.sol): This library provides functions for generating URIs for tokens and contracts based on provided metadata.
 
 ```solidity
 
@@ -44,7 +44,7 @@ OnChain Protocol is a set of Solidity contracts and libraries that enable on-cha
 ```
 
 
-- [OnChainMetadataStorage.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/contracts/OnChainMetadataStorage.sol): This library provides a structure for on-chain metadata storage. It contains all keys compliant with official standards for NFT contract metadata.
+- [OnChainMetadataStorage.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/dapp/contracts/OnChainMetadataStorage.sol): This library provides a structure for on-chain metadata storage. It contains all keys compliant with official standards for NFT contract metadata.
 
 ```solidity
 
@@ -68,7 +68,7 @@ OnChain Protocol is a set of Solidity contracts and libraries that enable on-cha
 ```
 
 
-- [OnChainMetadata.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/contracts/OnChainMetadata.sol): This abstract contract provides the core functionalities for managing on-chain metadata.
+- [OnChainMetadata.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/dapp/contracts/OnChainMetadata.sol): This abstract contract provides the core functionalities for managing on-chain metadata.
 
 ```solidity
 
@@ -99,22 +99,22 @@ OnChain Protocol is a set of Solidity contracts and libraries that enable on-cha
 ```
 
 
-- [ERC721OnChainMetadata.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/contracts/ERC721OnChainMetadata.sol): This abstract contract extends ERC721 and OnChainMetadata. It provides the implementation of the tokenURI and contractURI functions required by NFT standards for metadata management.
+- [ERC721OnChainMetadata.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/dapp/contracts/ERC721OnChainMetadata.sol): This abstract contract extends ERC721 and OnChainMetadata. It provides the implementation of the tokenURI and contractURI functions required by NFT standards for metadata management.
 
-- [ERC1155OnChainMetadata.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/contracts/ERC1155OnChainMetadata.sol): This abstract contract extends ERC1155 and OnChainMetadata. It provides the implementation of the uri and contractURI functions required by NFT standards for metadata management.
+- [ERC1155OnChainMetadata.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/dapp/contracts/ERC1155OnChainMetadata.sol): This abstract contract extends ERC1155 and OnChainMetadata. It provides the implementation of the uri and contractURI functions required by NFT standards for metadata management.
 
 
 ## Usage
 
-The basic use is to inherit from [ERC721OnChainMetadata](https://github.com/andreatedesco/OnChain-Protocol/blob/main/contracts/ERC721OnChainMetadata.sol) or [ERC1155OnChainMetadata](https://github.com/andreatedesco/OnChain-Protocol/blob/main/contracts/ERC1155OnChainMetadata.sol), set contract metadata from constructor and set token metadata from mint function.
+The basic use is to inherit from [ERC721OnChainMetadata](https://github.com/andreatedesco/OnChain-Protocol/blob/main/dapp/contracts/ERC721OnChainMetadata.sol) or [ERC1155OnChainMetadata](https://github.com/andreatedesco/OnChain-Protocol/blob/main/dapp/contracts/ERC1155OnChainMetadata.sol), set contract metadata from constructor and set token metadata from mint function.
 
 #### Examples
 
 In the examples directory, you can find two usage examples of the protocol for creating ERC721 and ERC1155 contracts with on-chain metadata.
 
-- [ERC721OnChainMetadataExample.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/contracts/examples/ERC721OnChainMetadataExample.sol): Example of ERC721 with on-chain SVG images. [See on Opensea](https://testnets.opensea.io/collection/erc721onchainmetadata-example).
+- [ERC721OnChainMetadataExample.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/dapp/contracts/examples/ERC721OnChainMetadataExample.sol): Example of ERC721 with on-chain SVG images. [See on Opensea](https://testnets.opensea.io/collection/erc721onchainmetadata-example).
 
-- [ERC1155OnChainMetadataExample.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/contracts/examples/ERC1155OnChainMetadataExample.sol): Example of ERC1155 with on-chain SVG images. [See on  Opensea](https://testnets.opensea.io/collection/erc1155onchainmetadata-example).
+- [ERC1155OnChainMetadataExample.sol](https://github.com/andreatedesco/OnChain-Protocol/blob/main/dapp/contracts/examples/ERC1155OnChainMetadataExample.sol): Example of ERC1155 with on-chain SVG images. [See on  Opensea](https://testnets.opensea.io/collection/erc1155onchainmetadata-example).
 
 
 ## Disclaimer
