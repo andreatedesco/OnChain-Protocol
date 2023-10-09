@@ -130,6 +130,6 @@ My work has been to streamline smart contracts, eliminate redundancies, and orga
 Don't hesitate to get involved by opening an Issue or submitting a Pull Request!
 
 If you'd like to show your appreciation for the protocol, consider making a small contribution.
-My wallet address is 0xecb4F374069a34CdDD096C697dD1e6fbD82D56b1.
+My wallet address is 0x9562ea3f067df088afe6f7f21a52bc9f19396d34.
 
 Follow me on Twitter [@andreatedescoo](https://twitter.com/andreatedescoo) for updates and news!
